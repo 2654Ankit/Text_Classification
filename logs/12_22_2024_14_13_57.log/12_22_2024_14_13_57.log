@@ -1,0 +1,10 @@
+[2024-12-22 14:13:58,405] root - INFO - >>>> stage Data ingestion pipeline started <<<<<
+[2024-12-22 14:13:58,410] root - INFO - created dir at :artifacts
+[2024-12-22 14:13:58,410] root - INFO - created dir at :artifacts/data_ingestion
+[2024-12-22 14:13:58,412] root - INFO - Downloading data from https://drive.google.com/file/d/1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_/view?usp=drive_link into file artifacts/data_ingestion/data.zip
+[2024-12-22 14:13:58,418] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): drive.google.com:443
+[2024-12-22 14:14:04,699] urllib3.connectionpool - DEBUG - https://drive.google.com:443 "GET /uc?/export=download&id=1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_ HTTP/11" 303 0
+[2024-12-22 14:14:04,699] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): doc-00-3o-docs.googleusercontent.com:443
+[2024-12-22 14:14:07,888] urllib3.connectionpool - DEBUG - https://doc-00-3o-docs.googleusercontent.com:443 "GET /docs/securesc/u727qbb4h4vr5rmirulce2ubr3lm7ml6/e3eas618dl9pnv3774n2stah7ga7quq8/1734857025000/05840176216229665370/06160806390192916552Z/1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_?uuid=33b1d426-3f89-4a5a-a1a2-efb1cfd87088 HTTP/11" 200 2323493
+[2024-12-22 14:14:09,209] root - INFO - Downloading data from https://drive.google.com/file/d/1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_/view?usp=drive_link into file artifacts/data_ingestion/data.zip
+[2024-12-22 14:14:09,296] root - INFO - >>>stage Data ingestion pipeline completed <<<<<

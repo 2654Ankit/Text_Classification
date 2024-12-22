@@ -1,0 +1,14 @@
+numpy
+pandas
+tensorflow
+matplotlib
+seaborn
+nltk
+regex
+from-root
+scikit-learn
+google-cloud-storage
+fastapi
+uvicorn
+Jinja2
+-e .

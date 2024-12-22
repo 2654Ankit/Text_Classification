@@ -1,0 +1,20 @@
+[2024-12-22 14:07:38,148] root - INFO - >>>> stage Data ingestion pipeline started <<<<<
+[2024-12-22 14:07:38,148] root - ERROR - [Errno 2] No such file or directory: '..\\config\\config.yaml'
+Traceback (most recent call last):
+  File "D:\ML_Projects\End_to_end\Text_Classification\main.py", line 10, in <module>
+    obj.main()
+  File "D:\ML_Projects\End_to_end\Text_Classification\hate\pipeline\data_ingestion.py", line 23, in main
+    raise e
+  File "D:\ML_Projects\End_to_end\Text_Classification\hate\pipeline\data_ingestion.py", line 14, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ML_Projects\End_to_end\Text_Classification\hate\config\configuration.py", line 8, in __init__
+    self.config = read_yaml(config_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\ML\envs\textClassifier\Lib\site-packages\ensure\main.py", line 835, in __call__
+    return self.f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ML_Projects\End_to_end\Text_Classification\hate\utils\common.py", line 9, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+         ^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '..\\config\\config.yaml'
