@@ -1,8 +1,0 @@
-[2024-12-22 11:34:01,254] root - INFO - created dir at :artifacts
-[2024-12-22 11:34:01,254] root - INFO - created dir at :artifacts/data_ingestion
-[2024-12-22 11:34:01,254] root - INFO - Downloading file
-[2024-12-22 11:34:01,254] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): drive.google.com:443
-[2024-12-22 11:34:05,619] urllib3.connectionpool - DEBUG - https://drive.google.com:443 "GET /uc?/export=download&id=1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_ HTTP/11" 303 0
-[2024-12-22 11:34:05,635] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): doc-00-3o-docs.googleusercontent.com:443
-[2024-12-22 11:34:07,937] urllib3.connectionpool - DEBUG - https://doc-00-3o-docs.googleusercontent.com:443 "GET /docs/securesc/u727qbb4h4vr5rmirulce2ubr3lm7ml6/dof4jgko6k4nji07cluaaake6kavfplj/1734847425000/05840176216229665370/06160806390192916552Z/1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_?uuid=35872701-1343-4d0c-9128-bb43e520fabe HTTP/11" 200 2323493
-[2024-12-22 11:34:09,621] root - INFO - downloading data from https://drive.google.com/file/d/1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_/view?usp=drive_link into file artifacts/data_ingestion/data.zip

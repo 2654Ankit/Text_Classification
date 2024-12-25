@@ -1,0 +1,13 @@
+[2024-12-25 01:24:18,074] root - INFO - Entered the run_pipeline method of training pipeline
+[2024-12-25 01:24:18,074] root - INFO - Entered the start data_ingestion method of Trainingpipeline class
+[2024-12-25 01:24:18,074] root - INFO - Getting data
+[2024-12-25 01:24:18,074] root - INFO - Entered the initate data_ingestion method class
+[2024-12-25 01:24:18,074] root - INFO - Downloading data from https://drive.google.com/file/d/1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_/view?usp=drive_link into file D:\ML_Projects\End_to_end\Text_Classification\artifacts\12_25_2024_01_24_14\DataIngestionArtifacts\dataset.zip
+[2024-12-25 01:24:18,081] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): drive.google.com:443
+[2024-12-25 01:24:20,463] urllib3.connectionpool - DEBUG - https://drive.google.com:443 "GET /uc?/export=download&id=1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_ HTTP/11" 303 0
+[2024-12-25 01:24:20,465] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): doc-00-3o-docs.googleusercontent.com:443
+[2024-12-25 01:24:22,850] urllib3.connectionpool - DEBUG - https://doc-00-3o-docs.googleusercontent.com:443 "GET /docs/securesc/u727qbb4h4vr5rmirulce2ubr3lm7ml6/g1pf47br4ijp1ckptp5cj3ibvdqtv3u5/1735070025000/05840176216229665370/06160806390192916552Z/1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_?uuid=e973d86c-3009-466b-92dc-4ae923b91dc9 HTTP/11" 200 2323493
+[2024-12-25 01:24:25,044] root - INFO - Downloading data from https://drive.google.com/file/d/1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_/view?usp=drive_link into file D:\ML_Projects\End_to_end\Text_Classification\artifacts\12_25_2024_01_24_14\DataIngestionArtifacts\dataset.zip
+[2024-12-25 01:24:25,044] root - INFO - fetched the data from drive
+[2024-12-25 01:24:25,097] root - INFO - Existed the extract_zip_file mehod
+[2024-12-25 01:24:25,097] root - INFO - data ingestion artifact: DataIngestionArtifacts(imbalance_data_file_path='D:\\ML_Projects\\End_to_end\\Text_Classification\\artifacts\\12_25_2024_01_24_14\\DataIngestionArtifacts\\imbalanced_data.csv', raw_data_file_path='D:\\ML_Projects\\End_to_end\\Text_Classification\\artifacts\\12_25_2024_01_24_14\\DataIngestionArtifacts\\raw_data.csv')

@@ -1,0 +1,484 @@
+[2024-12-25 13:19:45,912] root - INFO - Entered the run_pipeline method of training pipeline
+[2024-12-25 13:19:45,912] root - INFO - Entered the start data_ingestion method of Trainingpipeline class
+[2024-12-25 13:19:45,912] root - INFO - Getting data
+[2024-12-25 13:19:45,912] root - INFO - Entered the initate data_ingestion method class
+[2024-12-25 13:19:45,912] root - INFO - Downloading data from https://drive.google.com/file/d/1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_/view?usp=drive_link into file D:\ML_Projects\End_to_end\Text_Classification\artifacts\12_25_2024_13_19_43\DataIngestionArtifacts\dataset.zip
+[2024-12-25 13:19:45,912] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): drive.google.com:443
+[2024-12-25 13:19:49,722] urllib3.connectionpool - DEBUG - https://drive.google.com:443 "GET /uc?/export=download&id=1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_ HTTP/11" 303 0
+[2024-12-25 13:19:49,729] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): doc-00-3o-docs.googleusercontent.com:443
+[2024-12-25 13:19:52,458] urllib3.connectionpool - DEBUG - https://doc-00-3o-docs.googleusercontent.com:443 "GET /docs/securesc/u727qbb4h4vr5rmirulce2ubr3lm7ml6/fssrr1v8b5lkgvvh9i9hccfnge0ie3e5/1735112925000/05840176216229665370/06160806390192916552Z/1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_?uuid=1703ce16-0d33-4a44-90df-57981218f41d HTTP/11" 200 2323493
+[2024-12-25 13:19:53,075] root - INFO - Downloading data from https://drive.google.com/file/d/1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_/view?usp=drive_link into file D:\ML_Projects\End_to_end\Text_Classification\artifacts\12_25_2024_13_19_43\DataIngestionArtifacts\dataset.zip
+[2024-12-25 13:19:53,075] root - INFO - fetched the data from drive
+[2024-12-25 13:19:53,142] root - INFO - Existed the extract_zip_file mehod
+[2024-12-25 13:19:53,142] root - INFO - data ingestion artifact: DataIngestionArtifacts(imbalance_data_file_path='D:\\ML_Projects\\End_to_end\\Text_Classification\\artifacts\\12_25_2024_13_19_43\\DataIngestionArtifacts\\imbalanced_data.csv', raw_data_file_path='D:\\ML_Projects\\End_to_end\\Text_Classification\\artifacts\\12_25_2024_13_19_43\\DataIngestionArtifacts\\raw_data.csv')
+[2024-12-25 13:19:53,142] root - INFO - enterned into start data_transformation method of training pipeline
+[2024-12-25 13:19:53,142] root - INFO - entered inthe initate_data_transformation methos of Data transformation
+[2024-12-25 13:19:53,142] root - INFO - Entered into the imbalanced_data_cleaning function
+[2024-12-25 13:19:53,271] root - INFO - Existed the imbalance data_cleaning function and returned imbalanced data        label                                              tweet
+0          0   @user when a father is dysfunctional and is s...
+1          0  @user @user thanks for #lyft credit i can't us...
+2          0                                bihday your majesty
+3          0  #model   i love u take with u all the time in ...
+4          0             factsguide: society now    #motivation
+...      ...                                                ...
+31957      0  ate @user isz that youuu?ð\x9f\x98\x8dð\x9f\x98\x8dð\x9f\x98\x8dð\x9f\x98\x8dð\x9f\x98\x8dð...
+31958      0    to see nina turner on the airwaves trying to...
+31959      0  listening to sad songs on a monday morning otw...
+31960      1  @user #sikh #temple vandalised in in #calgary,...
+31961      0                   thank you @user for you follow  
+
+[31962 rows x 2 columns]
+[2024-12-25 13:19:53,271] root - INFO - entered into raw data cleaning function
+[2024-12-25 13:19:53,271] root - INFO - Entered into raw data cleaning function
+[2024-12-25 13:19:53,365] root - INFO - existed the raw data cleaning function and returned the raw data        class                                              tweet
+0          0  !!! RT @mayasolovely: As a woman you shouldn't...
+1          1  !!!!! RT @mleew17: boy dats cold...tyga dwn ba...
+2          1  !!!!!!! RT @UrKindOfBrand Dawg!!!! RT @80sbaby...
+3          1  !!!!!!!!! RT @C_G_Anderson: @viva_based she lo...
+4          1  !!!!!!!!!!!!! RT @ShenikaRoberts: The shit you...
+...      ...                                                ...
+24778      1  you's a muthaf***in lie &#8220;@LifeAsKing: @2...
+24779      0  you've gone and broke the wrong heart baby, an...
+24780      1  young buck wanna eat!!.. dat nigguh like I ain...
+24781      1              youu got wild bitches tellin you lies
+24782      0  ~~Ruffled | Ntac Eileen Dahlia - Beautiful col...
+
+[24783 rows x 2 columns]
+[2024-12-25 13:19:53,367] root - INFO - Entered into the concat_dataframe function
+[2024-12-25 13:19:53,367] root - INFO - Entered into raw data cleaning function
+[2024-12-25 13:19:53,469] root - INFO - existed the raw data cleaning function and returned the raw data        class                                              tweet
+0          0  !!! RT @mayasolovely: As a woman you shouldn't...
+1          1  !!!!! RT @mleew17: boy dats cold...tyga dwn ba...
+2          1  !!!!!!! RT @UrKindOfBrand Dawg!!!! RT @80sbaby...
+3          1  !!!!!!!!! RT @C_G_Anderson: @viva_based she lo...
+4          1  !!!!!!!!!!!!! RT @ShenikaRoberts: The shit you...
+...      ...                                                ...
+24778      1  you's a muthaf***in lie &#8220;@LifeAsKing: @2...
+24779      0  you've gone and broke the wrong heart baby, an...
+24780      1  young buck wanna eat!!.. dat nigguh like I ain...
+24781      1              youu got wild bitches tellin you lies
+24782      0  ~~Ruffled | Ntac Eileen Dahlia - Beautiful col...
+
+[24783 rows x 2 columns]
+[2024-12-25 13:19:53,469] root - INFO - Entered into the imbalanced_data_cleaning function
+[2024-12-25 13:19:53,582] root - INFO - Existed the imbalance data_cleaning function and returned imbalanced data        label                                              tweet
+0          0   @user when a father is dysfunctional and is s...
+1          0  @user @user thanks for #lyft credit i can't us...
+2          0                                bihday your majesty
+3          0  #model   i love u take with u all the time in ...
+4          0             factsguide: society now    #motivation
+...      ...                                                ...
+31957      0  ate @user isz that youuu?ð\x9f\x98\x8dð\x9f\x98\x8dð\x9f\x98\x8dð\x9f\x98\x8dð\x9f\x98\x8dð...
+31958      0    to see nina turner on the airwaves trying to...
+31959      0  listening to sad songs on a monday morning otw...
+31960      1  @user #sikh #temple vandalised in in #calgary,...
+31961      0                   thank you @user for you follow  
+
+[31962 rows x 2 columns]
+[2024-12-25 13:19:53,602] root - INFO - returned the concated data        class                                              tweet  label
+0        0.0  !!! RT @mayasolovely: As a woman you shouldn't...    NaN
+1        1.0  !!!!! RT @mleew17: boy dats cold...tyga dwn ba...    NaN
+2        1.0  !!!!!!! RT @UrKindOfBrand Dawg!!!! RT @80sbaby...    NaN
+3        1.0  !!!!!!!!! RT @C_G_Anderson: @viva_based she lo...    NaN
+4        1.0  !!!!!!!!!!!!! RT @ShenikaRoberts: The shit you...    NaN
+...      ...                                                ...    ...
+31957    NaN  ate @user isz that youuu?ð\x9f\x98\x8dð\x9f\x98\x8dð\x9f\x98\x8dð\x9f\x98\x8dð\x9f\x98\x8dð...    0.0
+31958    NaN    to see nina turner on the airwaves trying to...    0.0
+31959    NaN  listening to sad songs on a monday morning otw...    0.0
+31960    NaN  @user #sikh #temple vandalised in in #calgary,...    1.0
+31961    NaN                   thank you @user for you follow      0.0
+
+[56745 rows x 3 columns]
+[2024-12-25 13:19:53,602] root - INFO - entered into cocat_data_cleaning funnction
+[2024-12-25 13:19:53,602] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:54,057] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:54,122] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:54,242] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:54,247] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:54,742] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:54,998] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,156] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,173] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,187] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,189] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,252] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,261] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,285] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,292] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,292] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,292] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,292] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,301] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,304] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,308] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,312] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,314] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,319] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,408] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,425] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,432] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,432] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,485] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,498] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,514] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,522] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,607] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,642] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,651] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,834] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,836] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,842] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,873] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,882] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,897] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,902] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:55,932] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:56,182] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:56,193] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:56,212] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:56,225] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:56,245] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:56,332] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:56,381] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:56,432] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:56,448] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:56,492] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:56,724] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:56,738] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:56,782] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:56,794] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:57,036] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:57,042] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:57,052] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:57,091] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:57,172] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:57,172] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:57,288] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:57,292] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:57,355] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:57,594] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:57,594] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:57,622] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:57,658] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:57,716] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:57,744] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:57,754] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:57,765] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:58,092] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:58,172] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:58,182] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:58,187] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:58,787] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:58,809] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:58,996] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:59,068] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:59,521] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:59,524] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:59,612] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:59,802] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:59,812] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:59,870] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:59,888] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:59,892] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:59,942] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:19:59,955] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:00,072] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:00,225] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:00,372] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:00,642] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:00,712] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:00,772] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:00,852] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:01,087] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:01,095] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:01,192] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:01,375] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:01,642] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:01,703] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:01,858] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:01,892] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:01,902] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:02,012] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:02,182] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:02,192] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:02,236] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:02,251] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:02,255] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:02,262] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:02,385] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:02,438] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:02,457] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:02,644] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:02,736] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:02,847] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:02,912] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:02,932] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:03,121] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:03,142] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:03,302] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:03,345] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:03,376] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:03,638] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:03,641] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:03,665] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:03,700] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:03,974] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:04,202] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:04,222] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:04,227] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:04,247] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:04,252] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:04,312] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:04,402] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:04,762] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:04,767] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:05,046] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:05,069] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:05,072] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:05,192] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:05,237] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:05,602] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:05,632] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:05,714] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:05,892] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:05,942] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:06,012] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:06,152] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:06,604] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:06,966] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:07,121] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:07,195] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:07,468] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:08,135] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:08,165] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:08,382] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:08,412] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:08,509] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:08,522] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:08,685] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:08,774] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:09,442] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:09,456] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:09,460] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:09,595] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:09,622] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:10,056] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:10,069] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:10,112] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:10,152] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:10,162] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:10,162] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:10,414] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:10,416] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:10,424] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:10,662] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:10,800] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:10,842] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:11,492] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:11,584] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:11,603] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:11,658] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:11,662] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:11,662] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:11,752] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:11,752] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:11,835] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:11,872] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:11,945] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:12,036] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:12,167] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:12,213] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:12,216] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:12,487] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:12,497] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:12,612] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:12,684] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:12,684] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:12,722] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:12,897] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:12,954] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:13,022] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:13,037] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:13,042] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:13,086] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:13,180] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:13,185] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:13,584] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:13,662] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:13,715] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:13,772] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:13,915] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:13,932] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:14,402] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:14,629] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:14,642] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:14,822] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:15,022] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:15,022] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:15,052] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:15,052] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:15,187] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:15,428] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:15,563] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:15,742] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:15,800] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:15,833] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:15,856] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:15,874] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:15,902] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:16,022] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:16,172] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:16,220] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:16,225] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:16,229] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:16,273] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:16,535] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:16,572] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:16,577] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:16,592] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:16,602] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:16,674] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:16,684] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:16,720] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:16,723] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:16,763] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:16,839] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:17,484] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:17,558] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:17,634] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:17,804] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:17,836] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:17,836] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:18,094] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:18,103] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:18,118] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:18,318] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:18,527] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:18,619] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:18,628] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:18,841] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:18,892] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:18,901] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:18,932] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:19,012] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:19,023] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:19,023] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:19,122] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:19,141] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:19,193] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:19,522] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:19,632] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:19,724] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:19,749] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:19,902] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:20,052] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:20,052] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:20,117] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:20,142] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:20,155] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:20,162] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:20,247] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:20,359] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:20,485] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:20,802] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:20,812] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:21,286] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:21,464] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:21,649] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:21,872] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:21,890] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:21,932] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:21,955] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:21,955] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:22,068] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:22,472] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:22,492] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:22,492] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:22,562] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:22,568] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:22,572] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:22,707] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:22,716] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:22,720] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:22,834] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:22,972] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:23,039] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:23,052] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:23,068] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:23,112] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:23,242] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:23,252] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:23,257] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:23,504] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:23,537] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:23,846] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:23,955] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:23,992] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:24,016] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:24,052] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:24,120] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:24,146] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:24,227] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:24,347] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:24,461] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:24,536] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:24,602] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:24,740] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:25,182] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:25,190] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:25,194] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:25,224] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:25,250] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:25,612] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:25,978] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:26,442] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:26,442] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:26,447] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:26,452] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:26,452] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:26,462] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:26,532] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:26,558] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:26,561] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:26,597] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:26,617] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:26,624] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:26,632] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:26,632] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:26,647] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:26,655] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:26,662] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:26,703] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:26,777] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:26,971] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:26,971] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:27,593] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:27,827] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:28,122] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:28,225] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:28,302] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:28,334] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:28,728] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:28,902] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:28,907] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:28,952] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:29,023] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:29,032] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:29,279] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:29,302] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:29,307] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:29,806] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:30,158] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:30,164] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:30,262] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:30,263] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:30,412] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:30,484] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:30,500] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:30,527] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:30,555] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:30,583] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:30,632] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:30,692] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:30,798] root - INFO - enterned the concat_data_cleaning function
+[2024-12-25 13:20:30,874] root - INFO - enterned the concat_data_cleaning function

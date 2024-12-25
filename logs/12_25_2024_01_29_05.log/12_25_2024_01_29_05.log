@@ -1,0 +1,18 @@
+[2024-12-25 01:29:09,588] root - INFO - Entered the run_pipeline method of training pipeline
+[2024-12-25 01:29:09,588] root - INFO - Entered the start data_ingestion method of Trainingpipeline class
+[2024-12-25 01:29:09,588] root - INFO - Getting data
+[2024-12-25 01:29:09,588] root - INFO - Entered the initate data_ingestion method class
+[2024-12-25 01:29:09,588] root - INFO - Downloading data from https://drive.google.com/file/d/1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_/view?usp=drive_link into file D:\ML_Projects\End_to_end\Text_Classification\artifacts\12_25_2024_01_29_06\DataIngestionArtifacts\dataset.zip
+[2024-12-25 01:29:09,596] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): drive.google.com:443
+[2024-12-25 01:29:12,309] urllib3.connectionpool - DEBUG - https://drive.google.com:443 "GET /uc?/export=download&id=1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_ HTTP/11" 303 0
+[2024-12-25 01:29:12,309] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): doc-00-3o-docs.googleusercontent.com:443
+[2024-12-25 01:29:13,264] urllib3.connectionpool - DEBUG - https://doc-00-3o-docs.googleusercontent.com:443 "GET /docs/securesc/u727qbb4h4vr5rmirulce2ubr3lm7ml6/rh4q6smgeei04ass9mili9omnmksqs2n/1735070325000/05840176216229665370/06160806390192916552Z/1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_?uuid=d27f42f5-1327-4923-97ea-68f7f629f469 HTTP/11" 302 0
+[2024-12-25 01:29:13,647] urllib3.connectionpool - DEBUG - https://drive.google.com:443 "GET /nonceSigner?nonce=5c05b8me4ikoc&continue=https://doc-00-3o-docs.googleusercontent.com/docs/securesc/u727qbb4h4vr5rmirulce2ubr3lm7ml6/rh4q6smgeei04ass9mili9omnmksqs2n/1735070325000/05840176216229665370/06160806390192916552Z/1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_?uuid%3Dd27f42f5-1327-4923-97ea-68f7f629f469&hash=5shku5ao58la1n18dcic9nfae8jl12ch HTTP/11" 302 0
+[2024-12-25 01:29:15,915] urllib3.connectionpool - DEBUG - https://doc-00-3o-docs.googleusercontent.com:443 "GET /docs/securesc/u727qbb4h4vr5rmirulce2ubr3lm7ml6/rh4q6smgeei04ass9mili9omnmksqs2n/1735070325000/05840176216229665370/06160806390192916552Z/1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_?uuid=d27f42f5-1327-4923-97ea-68f7f629f469&nonce=5c05b8me4ikoc&user=06160806390192916552Z&hash=0q73r00de9o68ot2pitle2cetdtilaqp HTTP/11" 200 2323493
+[2024-12-25 01:29:17,757] root - INFO - Downloading data from https://drive.google.com/file/d/1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_/view?usp=drive_link into file D:\ML_Projects\End_to_end\Text_Classification\artifacts\12_25_2024_01_29_06\DataIngestionArtifacts\dataset.zip
+[2024-12-25 01:29:17,757] root - INFO - fetched the data from drive
+[2024-12-25 01:29:17,823] root - INFO - Existed the extract_zip_file mehod
+[2024-12-25 01:29:17,823] root - INFO - data ingestion artifact: DataIngestionArtifacts(imbalance_data_file_path='D:\\ML_Projects\\End_to_end\\Text_Classification\\artifacts\\12_25_2024_01_29_06\\DataIngestionArtifacts\\imbalanced_data.csv', raw_data_file_path='D:\\ML_Projects\\End_to_end\\Text_Classification\\artifacts\\12_25_2024_01_29_06\\DataIngestionArtifacts\\raw_data.csv')
+[2024-12-25 01:29:17,823] root - INFO - enterned into start data_transformation method of training pipeline
+[2024-12-25 01:29:17,823] root - INFO - entered inthe initate_data_transformation methos of Data transformation
+[2024-12-25 01:29:17,823] root - INFO - Entered into the imbalanced_data_cleaning function

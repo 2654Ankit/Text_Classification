@@ -1,5 +1,0 @@
-[2024-12-22 11:23:36,937] root - INFO - Downloading file
-[2024-12-22 11:23:36,942] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): drive.google.com:443
-[2024-12-22 11:23:39,306] urllib3.connectionpool - DEBUG - https://drive.google.com:443 "GET /uc?/export=download&id=1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_ HTTP/11" 303 0
-[2024-12-22 11:23:39,308] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): doc-00-3o-docs.googleusercontent.com:443
-[2024-12-22 11:23:42,585] urllib3.connectionpool - DEBUG - https://doc-00-3o-docs.googleusercontent.com:443 "GET /docs/securesc/u727qbb4h4vr5rmirulce2ubr3lm7ml6/s22gvciv5vb59i4bnfi7223mfqo1jq5s/1734846750000/05840176216229665370/06160806390192916552Z/1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_?uuid=9609d515-e18e-4d63-85f4-44838576036a HTTP/11" 200 2323493

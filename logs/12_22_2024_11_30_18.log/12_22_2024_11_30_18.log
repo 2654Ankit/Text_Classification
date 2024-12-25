@@ -1,9 +1,0 @@
-[2024-12-22 11:30:19,368] root - INFO - created dir at :artifacts
-[2024-12-22 11:30:19,368] root - INFO - created dir at :artifacts/data_ingestion
-[2024-12-22 11:30:19,368] root - INFO - Downloading file
-[2024-12-22 11:30:19,368] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): drive.google.com:443
-[2024-12-22 11:30:22,211] urllib3.connectionpool - DEBUG - https://drive.google.com:443 "GET /uc?/export=download&id=1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_ HTTP/11" 303 0
-[2024-12-22 11:30:22,212] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): doc-00-3o-docs.googleusercontent.com:443
-[2024-12-22 11:30:22,970] urllib3.connectionpool - DEBUG - https://doc-00-3o-docs.googleusercontent.com:443 "GET /docs/securesc/u727qbb4h4vr5rmirulce2ubr3lm7ml6/ppbckrh8mu3nrv8ss8m26gv6ba6i0h2m/1734847200000/05840176216229665370/06160806390192916552Z/1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_?uuid=f205a705-7c21-4415-a66d-3499858e164c HTTP/11" 302 0
-[2024-12-22 11:30:23,332] urllib3.connectionpool - DEBUG - https://drive.google.com:443 "GET /nonceSigner?nonce=1j6kjiaesevd8&continue=https://doc-00-3o-docs.googleusercontent.com/docs/securesc/u727qbb4h4vr5rmirulce2ubr3lm7ml6/ppbckrh8mu3nrv8ss8m26gv6ba6i0h2m/1734847200000/05840176216229665370/06160806390192916552Z/1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_?uuid%3Df205a705-7c21-4415-a66d-3499858e164c&hash=e0ijghv35ppt3aheb9q3q2toulbrfc47 HTTP/11" 302 0
-[2024-12-22 11:30:25,545] urllib3.connectionpool - DEBUG - https://doc-00-3o-docs.googleusercontent.com:443 "GET /docs/securesc/u727qbb4h4vr5rmirulce2ubr3lm7ml6/ppbckrh8mu3nrv8ss8m26gv6ba6i0h2m/1734847200000/05840176216229665370/06160806390192916552Z/1J8Gd0d4YwOhdkN0SALD1CBRe-argMey_?uuid=f205a705-7c21-4415-a66d-3499858e164c&nonce=1j6kjiaesevd8&user=06160806390192916552Z&hash=aerrv3s2oosii575bsker973ot37cfl6 HTTP/11" 200 2323493
