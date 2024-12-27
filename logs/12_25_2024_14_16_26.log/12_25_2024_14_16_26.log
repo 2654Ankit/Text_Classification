@@ -1,0 +1,11 @@
+[2024-12-25 14:16:40,980] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[2024-12-25 14:16:42,327] h5py._conv - DEBUG - Creating converter from 7 to 5
+[2024-12-25 14:16:42,327] h5py._conv - DEBUG - Creating converter from 5 to 7
+[2024-12-25 14:16:42,327] h5py._conv - DEBUG - Creating converter from 7 to 5
+[2024-12-25 14:16:42,327] h5py._conv - DEBUG - Creating converter from 5 to 7
+[2024-12-25 14:16:44,840] matplotlib - DEBUG - matplotlib data path: D:\AI\ML\envs\textClassifier\Lib\site-packages\matplotlib\mpl-data
+[2024-12-25 14:16:44,850] matplotlib - DEBUG - CONFIGDIR=C:\Users\ankit\.matplotlib
+[2024-12-25 14:16:44,865] matplotlib - DEBUG - interactive is False
+[2024-12-25 14:16:44,865] matplotlib - DEBUG - platform is win32
+[2024-12-25 14:16:45,137] matplotlib - DEBUG - CACHEDIR=C:\Users\ankit\.matplotlib
+[2024-12-25 14:16:45,155] matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\ankit\.matplotlib\fontlist-v390.json
