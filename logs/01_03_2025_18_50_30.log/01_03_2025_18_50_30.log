@@ -1,0 +1,8 @@
+[2025-01-03 18:50:53,580] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[2025-01-03 18:50:54,497] h5py._conv - DEBUG - Creating converter from 7 to 5
+[2025-01-03 18:50:54,497] h5py._conv - DEBUG - Creating converter from 5 to 7
+[2025-01-03 18:50:54,497] h5py._conv - DEBUG - Creating converter from 7 to 5
+[2025-01-03 18:50:54,499] h5py._conv - DEBUG - Creating converter from 5 to 7
+[2025-01-03 18:51:01,064] asyncio - DEBUG - Using proactor: IocpProactor
+[2025-01-03 18:51:23,538] root - INFO - entered into run_pipeline method of prepictionpipeline class
+[2025-01-03 18:51:23,538] root - INFO - Running the prediction function

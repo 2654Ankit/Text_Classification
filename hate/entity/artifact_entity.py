@@ -17,3 +17,6 @@ class ModelTrainerArtifacts:
     x_test_path:list
     y_test_path:list
     
+@dataclass
+class ModelEvaluationArtifacts:
+    is_model_accepted:bool

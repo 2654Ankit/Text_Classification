@@ -1,0 +1,5 @@
+[2025-01-03 17:55:42,933] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[2025-01-03 17:55:43,733] h5py._conv - DEBUG - Creating converter from 7 to 5
+[2025-01-03 17:55:43,733] h5py._conv - DEBUG - Creating converter from 5 to 7
+[2025-01-03 17:55:43,733] h5py._conv - DEBUG - Creating converter from 7 to 5
+[2025-01-03 17:55:43,733] h5py._conv - DEBUG - Creating converter from 5 to 7
