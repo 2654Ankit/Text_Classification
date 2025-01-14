@@ -13,4 +13,5 @@ uvicorn
 Jinja2
 Flask
 gdown
+yaml
 -e .
