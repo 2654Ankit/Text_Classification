@@ -11,5 +11,6 @@ google-cloud-storage
 fastapi
 uvicorn
 Jinja2
+Flask
 gdown
 -e .
