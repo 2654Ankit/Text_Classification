@@ -13,5 +13,5 @@ uvicorn
 Jinja2
 Flask
 gdown
-yaml==6.0.2
+PyYAML==6.0.2
 -e .
