@@ -1,0 +1,10 @@
+[2025-01-14 18:57:06,051] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[2025-01-14 18:57:06,363] h5py._conv - DEBUG - Creating converter from 7 to 5
+[2025-01-14 18:57:06,363] h5py._conv - DEBUG - Creating converter from 5 to 7
+[2025-01-14 18:57:06,364] h5py._conv - DEBUG - Creating converter from 7 to 5
+[2025-01-14 18:57:06,364] h5py._conv - DEBUG - Creating converter from 5 to 7
+[2025-01-14 18:57:08,584] werkzeug - WARNING -  * Debugger is active!
+[2025-01-14 18:57:08,584] werkzeug - INFO -  * Debugger PIN: 829-501-677
+[2025-01-14 18:57:08,638] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 18:57:08] "GET /train HTTP/1.1" 200 -
+[2025-01-14 18:58:04,307] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 18:58:04] "GET /train HTTP/1.1" 200 -
+[2025-01-14 18:58:36,221] werkzeug - INFO -  * Detected change in 'D:\\ML_Projects\\End_to_end\\Text_Classification\\main.py', reloading

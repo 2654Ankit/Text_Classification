@@ -1,0 +1,20 @@
+[2025-01-14 18:38:28,088] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[2025-01-14 18:38:28,478] h5py._conv - DEBUG - Creating converter from 7 to 5
+[2025-01-14 18:38:28,478] h5py._conv - DEBUG - Creating converter from 5 to 7
+[2025-01-14 18:38:28,478] h5py._conv - DEBUG - Creating converter from 7 to 5
+[2025-01-14 18:38:28,478] h5py._conv - DEBUG - Creating converter from 5 to 7
+[2025-01-14 18:38:31,001] werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.10.111.248:8000
+[2025-01-14 18:38:31,001] werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2025-01-14 18:38:31,009] werkzeug - INFO -  * Restarting with stat
+[2025-01-14 18:42:00,181] werkzeug - INFO -  * Restarting with stat
+[2025-01-14 18:43:43,491] werkzeug - INFO -  * Restarting with stat
+[2025-01-14 18:44:27,510] werkzeug - INFO -  * Restarting with stat
+[2025-01-14 18:45:41,508] werkzeug - INFO -  * Restarting with stat
+[2025-01-14 18:47:30,325] werkzeug - INFO -  * Restarting with stat
+[2025-01-14 18:48:12,202] werkzeug - INFO -  * Restarting with stat
+[2025-01-14 18:50:39,369] werkzeug - INFO -  * Restarting with stat
+[2025-01-14 18:51:09,809] werkzeug - INFO -  * Restarting with stat
+[2025-01-14 18:51:29,571] werkzeug - INFO -  * Restarting with stat

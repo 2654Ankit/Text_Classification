@@ -1,0 +1,11 @@
+[2025-01-14 19:01:44,532] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[2025-01-14 19:01:45,078] h5py._conv - DEBUG - Creating converter from 7 to 5
+[2025-01-14 19:01:45,078] h5py._conv - DEBUG - Creating converter from 5 to 7
+[2025-01-14 19:01:45,078] h5py._conv - DEBUG - Creating converter from 7 to 5
+[2025-01-14 19:01:45,078] h5py._conv - DEBUG - Creating converter from 5 to 7
+[2025-01-14 19:01:48,429] werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.10.111.248:8000
+[2025-01-14 19:01:48,431] werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2025-01-14 19:01:48,433] werkzeug - INFO -  * Restarting with stat

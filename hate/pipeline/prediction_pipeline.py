@@ -18,10 +18,9 @@ class PredictionPipeline:
         "PreditModel")
         self.model_trainer_artifacts = ModelTrainerArtifacts
         self.data_transformation = DataTransformation(data_transformation_config=DataTransformationConfig,data_ingestion_artifacts=DataIngestionArtifacts)
-        print("hii")
+        
     def predict(self,text):
         logging.info("Running the prediction function")
-        print("hello")
 
         try:
             load_model = keras.models.load_model("artifacts/01_03_2025_17_56_15/ModelTrainerArtifacts/model.h5")
@@ -35,9 +34,7 @@ class PredictionPipeline:
             print("text is ",text)
             seq = load_tokenizer.texts_to_sequences(text)
             padded = pad_sequences(seq,maxlen=300)
-            print(seq)
             pred = load_model.predict(padded)
-            print("pred",pred)
 
             if pred >0.5:
                 print("hate and abusive")

@@ -1,0 +1,100 @@
+[2025-01-14 19:02:03,351] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[2025-01-14 19:02:03,802] h5py._conv - DEBUG - Creating converter from 7 to 5
+[2025-01-14 19:02:03,802] h5py._conv - DEBUG - Creating converter from 5 to 7
+[2025-01-14 19:02:03,802] h5py._conv - DEBUG - Creating converter from 7 to 5
+[2025-01-14 19:02:03,802] h5py._conv - DEBUG - Creating converter from 5 to 7
+[2025-01-14 19:02:06,318] werkzeug - WARNING -  * Debugger is active!
+[2025-01-14 19:02:06,346] werkzeug - INFO -  * Debugger PIN: 829-501-677
+[2025-01-14 19:02:06,514] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:02:06] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-01-14 19:02:07,052] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:02:07] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2025-01-14 19:02:07,060] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:02:07] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2025-01-14 19:02:07,452] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:02:07] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=DvxwQDtgXINIWblwSiAl HTTP/1.1" 200 -
+[2025-01-14 19:02:07,452] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:02:07] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2025-01-14 19:02:07,705] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:02:07] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-01-14 19:03:11,733] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:03:11] "GET / HTTP/1.1" 200 -
+[2025-01-14 19:03:11,770] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:03:11] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+[2025-01-14 19:03:13,949] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:03:13] "GET / HTTP/1.1" 200 -
+[2025-01-14 19:03:14,262] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:03:14] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+[2025-01-14 19:03:24,421] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:03:24] "GET / HTTP/1.1" 200 -
+[2025-01-14 19:03:24,445] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:03:24] "GET /static/css/home.css HTTP/1.1" 200 -
+[2025-01-14 19:03:40,598] root - INFO - entered into run_pipeline method of prepictionpipeline class
+[2025-01-14 19:03:40,598] root - INFO - Running the prediction function
+[2025-01-14 19:03:40,652] h5py._conv - DEBUG - Creating converter from 3 to 5
+[2025-01-14 19:03:41,546] root - INFO - enterned the concat_data_cleaning function
+[2025-01-14 19:03:42,343] root - INFO - existed from run_pipeline of prediction pipeline class
+[2025-01-14 19:03:42,346] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:03:42] "POST /predict HTTP/1.1" 200 -
+[2025-01-14 19:03:42,404] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:03:42] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+[2025-01-14 19:05:09,178] root - INFO - entered into run_pipeline method of prepictionpipeline class
+[2025-01-14 19:05:09,178] root - INFO - Running the prediction function
+[2025-01-14 19:05:09,593] root - INFO - enterned the concat_data_cleaning function
+[2025-01-14 19:05:10,265] root - INFO - existed from run_pipeline of prediction pipeline class
+[2025-01-14 19:05:10,267] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:05:10] "POST /predict HTTP/1.1" 200 -
+[2025-01-14 19:05:10,299] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:05:10] "GET /static/css/home.css HTTP/1.1" 200 -
+[2025-01-14 19:05:31,942] root - INFO - entered into run_pipeline method of prepictionpipeline class
+[2025-01-14 19:05:31,943] root - INFO - Running the prediction function
+[2025-01-14 19:05:32,234] root - INFO - enterned the concat_data_cleaning function
+[2025-01-14 19:05:32,471] root - INFO - existed from run_pipeline of prediction pipeline class
+[2025-01-14 19:05:32,475] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:05:32] "POST /predict HTTP/1.1" 200 -
+[2025-01-14 19:05:32,508] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:05:32] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+[2025-01-14 19:05:40,705] root - INFO - entered into run_pipeline method of prepictionpipeline class
+[2025-01-14 19:05:40,705] root - INFO - Running the prediction function
+[2025-01-14 19:05:40,985] root - INFO - enterned the concat_data_cleaning function
+[2025-01-14 19:05:41,310] root - INFO - existed from run_pipeline of prediction pipeline class
+[2025-01-14 19:05:41,314] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:05:41] "POST /predict HTTP/1.1" 200 -
+[2025-01-14 19:05:41,347] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:05:41] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+[2025-01-14 19:06:45,354] root - INFO - entered into run_pipeline method of prepictionpipeline class
+[2025-01-14 19:06:45,354] root - INFO - Running the prediction function
+[2025-01-14 19:06:45,677] root - INFO - enterned the concat_data_cleaning function
+[2025-01-14 19:06:45,927] tensorflow - WARNING - 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000022004231940> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[2025-01-14 19:06:45,950] root - INFO - existed from run_pipeline of prediction pipeline class
+[2025-01-14 19:06:45,954] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:06:45] "POST /predict HTTP/1.1" 200 -
+[2025-01-14 19:06:45,985] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:06:45] "GET /static/css/home.css HTTP/1.1" 200 -
+[2025-01-14 19:06:48,561] root - INFO - entered into run_pipeline method of prepictionpipeline class
+[2025-01-14 19:06:48,562] root - INFO - Running the prediction function
+[2025-01-14 19:06:48,859] root - INFO - enterned the concat_data_cleaning function
+[2025-01-14 19:06:49,127] tensorflow - WARNING - 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000002200426DD00> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[2025-01-14 19:06:49,144] root - INFO - existed from run_pipeline of prediction pipeline class
+[2025-01-14 19:06:49,146] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:06:49] "POST /predict HTTP/1.1" 200 -
+[2025-01-14 19:06:49,173] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:06:49] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+[2025-01-14 19:06:56,600] root - INFO - entered into run_pipeline method of prepictionpipeline class
+[2025-01-14 19:06:56,600] root - INFO - Running the prediction function
+[2025-01-14 19:06:56,896] root - INFO - enterned the concat_data_cleaning function
+[2025-01-14 19:06:57,166] root - INFO - existed from run_pipeline of prediction pipeline class
+[2025-01-14 19:06:57,167] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:06:57] "POST /predict HTTP/1.1" 200 -
+[2025-01-14 19:06:57,192] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:06:57] "GET /static/css/home.css HTTP/1.1" 200 -
+[2025-01-14 19:06:59,503] root - INFO - entered into run_pipeline method of prepictionpipeline class
+[2025-01-14 19:06:59,503] root - INFO - Running the prediction function
+[2025-01-14 19:06:59,830] root - INFO - enterned the concat_data_cleaning function
+[2025-01-14 19:07:00,093] root - INFO - existed from run_pipeline of prediction pipeline class
+[2025-01-14 19:07:00,094] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:07:00] "POST /predict HTTP/1.1" 200 -
+[2025-01-14 19:07:00,121] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:07:00] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+[2025-01-14 19:07:13,899] root - INFO - entered into run_pipeline method of prepictionpipeline class
+[2025-01-14 19:07:13,899] root - INFO - Running the prediction function
+[2025-01-14 19:07:14,185] root - INFO - enterned the concat_data_cleaning function
+[2025-01-14 19:07:14,425] root - INFO - existed from run_pipeline of prediction pipeline class
+[2025-01-14 19:07:14,426] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:07:14] "POST /predict HTTP/1.1" 200 -
+[2025-01-14 19:07:14,768] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:07:14] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+[2025-01-14 19:07:49,616] root - INFO - entered into run_pipeline method of prepictionpipeline class
+[2025-01-14 19:07:49,616] root - INFO - Running the prediction function
+[2025-01-14 19:07:49,893] root - INFO - enterned the concat_data_cleaning function
+[2025-01-14 19:07:50,140] root - INFO - existed from run_pipeline of prediction pipeline class
+[2025-01-14 19:07:50,141] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:07:50] "POST /predict HTTP/1.1" 200 -
+[2025-01-14 19:07:50,167] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:07:50] "GET /static/css/home.css HTTP/1.1" 200 -
+[2025-01-14 19:07:56,692] root - INFO - entered into run_pipeline method of prepictionpipeline class
+[2025-01-14 19:07:56,692] root - INFO - Running the prediction function
+[2025-01-14 19:07:56,959] root - INFO - enterned the concat_data_cleaning function
+[2025-01-14 19:07:57,224] root - INFO - existed from run_pipeline of prediction pipeline class
+[2025-01-14 19:07:57,224] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:07:57] "POST /predict HTTP/1.1" 200 -
+[2025-01-14 19:07:57,251] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:07:57] "GET /static/css/home.css HTTP/1.1" 200 -
+[2025-01-14 19:08:02,533] root - INFO - entered into run_pipeline method of prepictionpipeline class
+[2025-01-14 19:08:02,533] root - INFO - Running the prediction function
+[2025-01-14 19:08:02,797] root - INFO - enterned the concat_data_cleaning function
+[2025-01-14 19:08:03,038] root - INFO - existed from run_pipeline of prediction pipeline class
+[2025-01-14 19:08:03,038] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:08:03] "POST /predict HTTP/1.1" 200 -
+[2025-01-14 19:08:03,053] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:08:03] "GET /static/css/home.css HTTP/1.1" 200 -
+[2025-01-14 19:08:18,313] root - INFO - entered into run_pipeline method of prepictionpipeline class
+[2025-01-14 19:08:18,313] root - INFO - Running the prediction function
+[2025-01-14 19:08:18,597] root - INFO - enterned the concat_data_cleaning function
+[2025-01-14 19:08:18,849] root - INFO - existed from run_pipeline of prediction pipeline class
+[2025-01-14 19:08:18,849] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:08:18] "POST /predict HTTP/1.1" 200 -
+[2025-01-14 19:08:18,870] werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 19:08:18] "GET /static/css/home.css HTTP/1.1" 200 -

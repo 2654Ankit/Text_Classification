@@ -1,0 +1,23 @@
+[2025-01-14 15:27:22,624] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[2025-01-14 15:27:32,304] h5py._conv - DEBUG - Creating converter from 7 to 5
+[2025-01-14 15:27:32,304] h5py._conv - DEBUG - Creating converter from 5 to 7
+[2025-01-14 15:27:32,307] h5py._conv - DEBUG - Creating converter from 7 to 5
+[2025-01-14 15:27:32,307] h5py._conv - DEBUG - Creating converter from 5 to 7
+[2025-01-14 15:27:49,888] asyncio - DEBUG - Using proactor: IocpProactor
+[2025-01-14 15:28:38,130] root - INFO - entered into run_pipeline method of prepictionpipeline class
+[2025-01-14 15:28:38,130] root - INFO - Running the prediction function
+[2025-01-14 15:28:38,175] h5py._conv - DEBUG - Creating converter from 3 to 5
+[2025-01-14 15:28:40,091] root - INFO - enterned the concat_data_cleaning function
+[2025-01-14 15:28:41,613] root - INFO - existed from run_pipeline of prediction pipeline class
+[2025-01-14 15:46:56,619] root - INFO - entered into run_pipeline method of prepictionpipeline class
+[2025-01-14 15:46:56,625] root - INFO - Running the prediction function
+[2025-01-14 15:46:58,259] root - INFO - enterned the concat_data_cleaning function
+[2025-01-14 15:46:59,525] root - INFO - existed from run_pipeline of prediction pipeline class
+[2025-01-14 15:47:14,533] root - INFO - entered into run_pipeline method of prepictionpipeline class
+[2025-01-14 15:47:14,533] root - INFO - Running the prediction function
+[2025-01-14 15:47:15,732] root - INFO - enterned the concat_data_cleaning function
+[2025-01-14 15:47:16,861] root - INFO - existed from run_pipeline of prediction pipeline class
+[2025-01-14 15:47:30,106] root - INFO - entered into run_pipeline method of prepictionpipeline class
+[2025-01-14 15:47:30,106] root - INFO - Running the prediction function
+[2025-01-14 15:47:32,790] root - INFO - enterned the concat_data_cleaning function
+[2025-01-14 15:47:33,699] root - INFO - existed from run_pipeline of prediction pipeline class
