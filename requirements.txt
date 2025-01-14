@@ -14,4 +14,8 @@ Jinja2
 Flask
 gdown
 PyYAML==6.0.2
+ensure
+python-box
+
+
 -e .
